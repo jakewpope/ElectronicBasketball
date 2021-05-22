@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TITLE HERE</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+  </head>
+
+  <body onload = "MyGame.game.initialize();">
+    <div id="game">
+
+      <div id="main-menu"class="screen">
+        <h1>TITLE HERE</h1>
+        <ul class="menu">
+          <li><button id = "id-new-game">New&nbsp;Game</button></li>
+
+          <li><button id = "id-controls">Controls</button></li>
+          <li><button id = "id-credits">Credits</button></li>
+        </ul>
+      </div>
+
+      <div id="game-play" class="screen">
+        <canvas id = "id-canvas" width = "1000" height = "1000" style = "width: 50vw; height: 50vw"></canvas>
+      </div>
+
+
+
+      <div id="controls" class="screen">
+        <h1>Customize Controls</h1>
+        <ul class = "menu">
+          <li><button id = "id-controls-up">Up: </button></li>
+          <li><button id = "id-controls-down">Down: </button></li>
+          <li><button id = "id-controls-left">Rotate Left: </button></li>
+          <li><button id = "id-controls-right">Rotate Right: </button></li>
+          <li><button id = "id-controls-back">Back</button></li>
+        </ul>
+      </div>
+
+      <div id="credits"class="screen">
+        <h1>Credits</h1>
+        <h1>Created by Jake Pope</h1>
+        <ul class = "menu">
+          <li><button id = "id-credits-back">Back</button></li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      let MyGame = {
+          screens : {},
+          input: {},
+          objects: {},
+          render: []
+      };
+    </script>
+
+    <script src = "scripts/objects/background.js"></script>
+    <script src = "scripts/objects/text.js"></script>
+
+
+    <script src = "scripts/render/core.js"></script>
+
+    <script src = "scripts/render/background.js"></script>
+
+
+    <script src = "scripts/render/text.js"></script>
+    <script src = "scripts/keyboardInput.js"></script>
+
+    <script src = "scripts/random.js"></script>
+    <script src = "scripts/game.js"></script>
+    <script src = "scripts/mainMenu.js"></script>
+    <script src = "scripts/gamePlay.js"></script>
+    <script src = "scripts/highScores.js"></script>
+    <script src = "scripts/controls.js"></script>
+    <script src = "scripts/credits.js"></script>
+
+  </body>
+</html>
