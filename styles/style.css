@@ -1,6 +1,72 @@
 body {
-    margin: 0;
+    margin: 5px;
     background-color: #b8bb96;
+}
+
+h5 {
+  display: inline;
+  color: #F0F0F0;
+}
+
+h1, h2, h3, h4 {
+  color: #F0F0F0;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ccc;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ccc;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30vw;
 }
 
 #game {
@@ -8,9 +74,9 @@ body {
     display: block;
     width: 50vw;
     height: 40vw;
-    border-style: solid;
-    border-width: 1px;
-    background-color: #DAD9D7;
+    border-radius: 3vw;
+
+    background-color: #2c2a1e;
     font-size: 40px;
 }
 
@@ -25,19 +91,19 @@ body {
 }
 
 #main-menu {
-    padding-top: 1em;
+    padding-top: 2em;
 
     font-size: 0.75em;
 }
 
 #controls{
-    padding-top: 1em;
+    padding-top: 2em;
 
     font-size: 0.75em;
 }
 
 #credits{
-    padding-top: 1em;
+    padding-top: 2em;
 
     font-size: 0.75em;
 }
@@ -58,8 +124,8 @@ ul.menu li button {
     font-size: 0.6em;
     color: #F0F0F0;
     width: 10em;
-    height: 1.5em;
-    background: #94908D;
+    height: 2.5em;
+    background: #c9340b;
     border: 0.1em solid #31302E;
     border-radius: 0.5em;
     box-shadow: 0.2em 0.2em 0.3em rgb(0, 0, 0);
