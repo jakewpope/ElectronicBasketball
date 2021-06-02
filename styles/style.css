@@ -1,13 +1,13 @@
 body {
     margin: 0;
-    background-color: #31302E;
+    background-color: #b8bb96;
 }
 
 #game {
     margin: auto;
     display: block;
     width: 50vw;
-    height: 50vw;
+    height: 40vw;
     border-style: solid;
     border-width: 1px;
     background-color: #DAD9D7;
@@ -26,7 +26,19 @@ body {
 
 #main-menu {
     padding-top: 1em;
-    cursor: pointer;
+
+    font-size: 0.75em;
+}
+
+#controls{
+    padding-top: 1em;
+
+    font-size: 0.75em;
+}
+
+#credits{
+    padding-top: 1em;
+
     font-size: 0.75em;
 }
 
@@ -51,6 +63,7 @@ ul.menu li button {
     border: 0.1em solid #31302E;
     border-radius: 0.5em;
     box-shadow: 0.2em 0.2em 0.3em rgb(0, 0, 0);
+    cursor: pointer;
 }
 
 ul.menu li button:hover {
