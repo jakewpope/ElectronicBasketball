@@ -10,7 +10,7 @@ MyGame.screens['game-play'] = (function(game, objects, renderer, graphics, input
     let myKeyboard = input.Keyboard();
 
     let myBackground = objects.Background({
-      imageSrc: 'assets/background.jpg',
+      imageSrc: 'assets/background.png',
       center: { x: graphics.canvas.width / 2, y: graphics.canvas.height / 2 },
       size: { width: graphics.canvas.width, height: graphics.canvas.height }
     });
@@ -61,6 +61,7 @@ MyGame.screens['game-play'] = (function(game, objects, renderer, graphics, input
 
     function render() {
         graphics.clear();
+        renderer.Background.render(myBackground);
     }
 
     function gameLoop(time) {
