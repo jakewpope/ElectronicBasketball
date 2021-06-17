@@ -2,11 +2,11 @@ MyGame.screens['high-scores'] = (function(game) {
     'use strict';
 
     function initialize() {
-        if (window.localStorage.getItem("scores") === null) {
+        if (window.localStorage.getItem("EBscores") === null) {
           let sItem = [100, 10, 15, 35, 40];
 
           let temp = JSON.stringify(sItem);
-          window.localStorage.setItem("scores", temp);
+          window.localStorage.setItem("EBscores", temp);
         }
 
 
@@ -14,7 +14,7 @@ MyGame.screens['high-scores'] = (function(game) {
     }
 
     function run() {
-      var sItem = JSON.parse(window.localStorage.getItem("scores"));
+      var sItem = JSON.parse(window.localStorage.getItem("EBscores"));
       sItem.sort(function(a, b) {
         return b - a;
       });

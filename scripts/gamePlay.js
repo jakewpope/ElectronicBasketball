@@ -98,20 +98,20 @@ MyGame.screens['game-play'] = (function(game, objects, renderer, graphics, input
 
       //
       // // check if controls are saved
-      // if (window.localStorage.getItem("controls") === null) {
+      // if (window.localStorage.getItem("EBcontrols") === null) {
       //   let cItem = {
       //     left: 'ArrowLeft',
       //     right: 'ArrowRight',
       //     thrust: " ",
       //   };
       //   let temp = JSON.stringify(cItem);
-      //   window.localStorage.setItem("controls", temp);
+      //   window.localStorage.setItem("EBcontrols", temp);
       //   myKeyboard.register(cItem.left, myLander.rotateLeft);
       //   myKeyboard.register(cItem.right, myLander.rotateRight);
       //   myKeyboard.register(cItem.thrust, myLander.thrust);
       // } else {
       //   // and set them if they are
-      //   var cItem = JSON.parse(window.localStorage.getItem("controls"));
+      //   var cItem = JSON.parse(window.localStorage.getItem("EBcontrols"));
       //   myKeyboard.register(cItem.left, myLander.rotateLeft);
       //   myKeyboard.register(cItem.right, myLander.rotateRight);
       //   myKeyboard.register(cItem.thrust, myLander.thrust);
